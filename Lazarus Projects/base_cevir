@@ -1,0 +1,31 @@
+program taban_cevir;
+uses crt;
+var sayi,taban,i,basamak:longint;
+       sayidizi : array [1..100] of byte;
+       
+begin
+	{sayilari al}
+	repeat
+   write('cevirilmesini istediginiz sayiyi giriniz:');read(sayi);
+   until sayi >0;
+    repeat
+   write('cevirilmesini istediginiz tabani giriniz:');read(taban);
+   until (taban<10) and (taban>1);
+       {sayilari al}	
+    basamak:=1;
+       {sayiyi cevirip dizi olarak kaydet}
+   while (sayi >= taban) do begin
+      sayidizi[basamak]:=sayi mod taban;
+      sayi:=sayi div taban;
+      basamak:=basamak + 1;
+   end;       	
+   sayidizi[basamak]:=sayi;
+       	{sayiyi cevirip dizi olarak kaydet}
+       	writeln();
+       	write('sonuc:');
+       	{diziyi ters yazdir}
+   for i:=basamak downto 1 do
+      write(sayidizi[i]);
+            {diziyi ters yazdir}
+       	
+end.

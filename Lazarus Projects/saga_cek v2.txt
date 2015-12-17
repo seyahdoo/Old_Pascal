@@ -1,0 +1,25 @@
+procedure saga_cek;
+
+begin
+          for i:=1 to oyun_buyuklugu do begin
+                  k:=oyun_buyuklugu;
+                  sifirsayisi:=0;
+                  while k<>1 do begin
+                  if actual[i,k] = 0 then begin
+
+                  while (actual[i,k] = 0) and (k <> 0) do begin
+
+                     k:=k - 1;
+                     sifirsayisi:=sifirsayisi + 1;
+                  end;
+
+                   actual[i,k + sifirsayisi]:=actual[i,k];
+                   actual[i,k]:=0;
+                   k:=k + sifirsayisi - 1;
+                   sifirsayisi:=0;
+
+                  end else  begin
+
+                  k:=k - 1; end;
+
+          end;   end;          end;    

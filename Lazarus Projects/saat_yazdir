@@ -1,0 +1,56 @@
+program saat_yazdir;
+uses crt;
+var saat,dakika,saniye:byte;
+begin
+
+   repeat
+
+   	write('saat giriniz:');
+   	read(saat);
+   	write('dakika giriniz:');
+   	read(dakika);
+   	write('saniye giriniz:');
+   	read(saniye);
+          if ((saat>=24) or (dakika>=60)) or (saniye>=60) then begin readkey();
+          clrscr; writeln('gecersiz bir saat girdiniz'); writeln('herhangi bir tusa basin');readkey();clrscr;
+          end;    
+   until ((saat<24) and (dakika<60)) and (saniye<60) ;
+   readkey();
+
+    while true do begin
+    	
+	{saat yazdir}
+	clrscr;
+	if saat<10 then
+	   write('0');
+	write(saat);
+	write(':');
+	if dakika<10 then
+    	write('0');
+	write(dakika);
+	write(':');
+	if saniye<10 then
+    	write('0');
+	write(saniye);
+	{saat yazdir}
+	
+	{saniyeyi 1 artir}
+	saniye:=saniye+1;
+	if saniye=60 then
+	begin
+	saniye:=0;
+	dakika:=dakika+1;
+	    if dakika=60 then
+	    begin
+	    	dakika:=0;
+	    	saat:=saat+1;
+	      	  if saat=24 then
+	      	   saat:=0;
+	    end;
+	end;
+	{saniyeyi 1 artir}
+
+		delay(1000);
+		
+    end;
+end.

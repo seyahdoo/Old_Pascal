@@ -1,0 +1,111 @@
+program thousandv2;
+uses crt;
+var       actual,undo1,undo2,undo3,undo4,undo5:array [1..100,1..100] of integer;
+          random2i,random2j:array[1..1000] of integer;
+          i,j,k,test,john,oyun_buyuklugu,sifirsayisi,tmp:integer;
+          key:char;
+          ismoved:boolean;
+label return;
+procedure matrix_yazdir;
+begin
+         {matris yazdýr}
+         clrscr;
+         for i:=1 to oyun_buyuklugu do begin
+           for j:=1 to oyun_buyuklugu do begin
+             write(actual[i,j]:2);write('  ');
+           end;
+           writeln();writeln();writeln();
+         end;
+         {matris yazdýr}
+end;
+procedure iki_koy;
+begin
+         if ismoved=true then begin
+         {rasgele 2 koy}
+          for i:=1 to oyun_buyuklugu do begin
+             for j:=1 to oyun_buyuklugu do begin
+               if actual[i,j]=0 then  begin
+               k:=k+1;
+               random2i[k]:=i;
+               random2j[k]:=j;
+               end;
+             end;
+          end;
+
+          if k<>1 then begin
+          k:=random(k);
+          actual[random2i[k],random2j[k]]:=2;
+          end
+          else
+          actual[random2i[k],random2j[k]]:=2;
+          {rasgele 2 koy}  end; ismoved:=false;
+
+end;
+procedure saga_cek;
+begin
+
+
+end;
+
+procedure sola_cek;
+
+begin
+          for i:=1 to oyun_buyuklugu do begin
+                  k:=1;
+                  sifirsayisi:=0;
+                  while k<>oyun_buyuklugu do begin
+                  if actual[i,k] = 0 then begin
+
+                  while (actual[i,k] = 0) and (k <> oyun_buyuklugu + 1) do begin
+
+                     k:=k + 1;
+                     sifirsayisi:=sifirsayisi + 1;
+                  end;
+
+                   actual[i,k - sifirsayisi]:=actual[i,k];
+                   actual[i,k]:=0;
+                   k:=k - sifirsayisi + 1;
+                   sifirsayisi:=0;
+                   ismoved:=true;
+                  end else  begin
+
+                  k:=k + 1; end;
+
+          end;   end;          end;
+procedure assagi_cek;
+begin end;
+procedure yukari_cek;
+begin end;
+
+begin
+
+       write('kare oyun buyuklugunu girin: ');read(oyun_buyuklugu);
+
+       return:
+       iki_koy;
+       matrix_yazdir;
+       key:=readkey;
+
+       case key of
+       'a' : begin
+       sola_cek;
+       goto return;
+       end;
+
+       's' : begin
+       assagi_cek;
+       goto return;
+       end;
+
+       'd' : begin
+       saga_cek;
+       goto return;
+       end;
+
+       'w' : begin
+       yukari_cek;
+       goto return;
+       end;
+
+       end;
+end.

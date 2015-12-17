@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="buyuge_cagir.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="karaktersifrele"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="17" Y="13"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="buyuge_cagir.pas"/>
+        <Caret Line="4" Column="15" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="buyuge_cagir.pas"/>
+        <Caret Line="16" Column="31" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="buyuge_cagir.pas"/>
+        <Caret Line="14" Column="24" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="buyuge_cagir.pas"/>
+        <Caret Line="19" Column="55" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="buyuge_cagir.pas"/>
+        <Caret Line="13" Column="7" TopLine="1"/>
+      </Position5>
+    </JumpHistory>
+  </ProjectSession>
+  <EditorMacros Count="0"/>
+</CONFIG>

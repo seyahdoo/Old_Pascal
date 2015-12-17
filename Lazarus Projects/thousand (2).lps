@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="thousand.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="thousand"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="12"/>
+        <CursorPos X="24" Y="19"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="313" Column="20" TopLine="292"/>
+      </Position1>
+      <Position2>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="329" Column="7" TopLine="293"/>
+      </Position2>
+      <Position3>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="328" Column="13" TopLine="293"/>
+      </Position3>
+      <Position4>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="323" Column="20" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="199" Column="13" TopLine="32"/>
+      </Position5>
+      <Position6>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="365" Column="29" TopLine="311"/>
+      </Position6>
+      <Position7>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="481" Column="32" TopLine="274"/>
+      </Position7>
+      <Position8>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="69" Column="1" TopLine="40"/>
+      </Position8>
+      <Position9>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="64" Column="38" TopLine="43"/>
+      </Position9>
+      <Position10>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="22" Column="24" TopLine="1"/>
+      </Position10>
+      <Position11>
+        <Filename Value="thousand.pas"/>
+        <Caret Line="61" Column="22" TopLine="46"/>
+      </Position11>
+    </JumpHistory>
+  </ProjectSession>
+  <EditorMacros Count="0"/>
+</CONFIG>

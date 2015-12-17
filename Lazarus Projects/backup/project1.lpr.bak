@@ -1,0 +1,25 @@
+program project1;
+uses crt;
+
+var harf:char;
+     sabit,yeniharf:integer;
+
+begin
+
+  read(harf);
+  writeln(harf);
+  sabit:=ord('A') - ord('a');
+  writeln(sabit);
+  readkey;
+  if (ord(harf) >= ord('a')) AND (ord(harf) <= ord('z')) then begin
+    yeniharf:=ord(harf) + sabit;
+    writeln(chr(yeniharf));
+
+  end;
+
+
+
+    readkey;
+
+
+end.
